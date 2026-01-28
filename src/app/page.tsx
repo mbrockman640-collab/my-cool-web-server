@@ -1,3 +1,5 @@
+import StatusBadge from "@/components/StatusBadge";
+
 const highlights = [
   {
     title: "Instant sandboxes",
@@ -37,10 +39,7 @@ export default function Home() {
             <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/70">
               Sandboxed
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs uppercase tracking-[0.3em] text-emerald-200">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.9)]" />
-              Live
-            </span>
+            <StatusBadge />
           </div>
 
           <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-6xl">
@@ -87,8 +86,7 @@ export default function Home() {
                 <div key={pulse.label} className="flex items-center justify-between">
                   <span className="text-sm text-slate-200/80">{pulse.label}</span>
                   <span className="text-sm font-semibold text-white">
-                    {pulse.value}
-                  </span>
+                    {pulse.value}</span>
                 </div>
               ))}
             </div>
