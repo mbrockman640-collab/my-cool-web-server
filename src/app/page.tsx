@@ -43,7 +43,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-6xl">
-            A Next.js server forged inside an E2B sandbox.
+            Sandboxed with love.
           </h1>
           <p className="max-w-2xl text-lg text-slate-200/80 sm:text-xl">
             This is a clean, production-minded starting point with sharp layout,
